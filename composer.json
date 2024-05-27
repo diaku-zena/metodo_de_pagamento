@@ -1,0 +1,17 @@
+{
+    "name": "diaku/metodo_de_pagamento",
+    "description": "\"Getway de pagamento\"",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "diaku-zena",
+            "email": "diakuzena@gmail.com"
+        }
+    ],
+    "require": {}
+}

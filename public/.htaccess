@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Rewrite all requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?a=$1 [QSA,L]
+
+<IfModule mod_expires.c>
+    ExpiresActive Off
+</IfModule>
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+</IfModule>
